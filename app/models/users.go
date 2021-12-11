@@ -28,6 +28,7 @@ func (u *User) CreateUser() (err error) {
 	if err != nil {
 		log.Fatalln(err)
 	}
+
 	return err
 }
 
@@ -54,6 +55,17 @@ func GetUser(id int) (user User, err error) {
 func (u *User) UpdateUser() (err error) {
 	cmd := `update users set name = ?, email = ? where id = ?`
 	_, err = Db.Exec(cmd, u.Name, u.Email, u.ID)
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
+}
+
+// ユーザー削除
+func (u *User) DeleteUser() (err error) {
+	cmd := `delete from users where id = ?`
+	_, err = Db.Exec(cmd, u.ID)
 
 	if err != nil {
 		log.Fatalln(err)

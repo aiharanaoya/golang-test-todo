@@ -33,4 +33,8 @@ func main() {
 
 	u, _ = models.GetUser(1)
 	fmt.Println("ID:1のuser（更新後）", u)
+
+	u.DeleteUser()
+	u, _ = models.GetUser(1)
+	fmt.Println(u)
 }
