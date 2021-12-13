@@ -24,17 +24,30 @@ func main() {
 
 	// u.CreateUser()
 
-	u, _ := models.GetUser(1)
-	fmt.Println("ID:1のuser", u)
+	// u, _ := models.GetUser(1)
+	// fmt.Println("ID:1のuser", u)
 
-	u.Name = "test2"
-	u.Email = "test2@example.com"
-	u.UpdateUser()
+	// u.Name = "test2"
+	// u.Email = "test2@example.com"
+	// u.UpdateUser()
 
-	u, _ = models.GetUser(1)
-	fmt.Println("ID:1のuser（更新後）", u)
+	// u, _ = models.GetUser(1)
+	// fmt.Println("ID:1のuser（更新後）", u)
 
-	u.DeleteUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	// u.DeleteUser()
+	// u, _ = models.GetUser(1)
+	// fmt.Println(u)
+
+	// user, _ := models.GetUser(2)
+	// user.CreateTodo("user2 Todo2")
+
+	// t, _ := models.GetTodo(1)
+	// fmt.Println("ID:1のTODO", t)
+
+	u, _ := models.GetUser(2)
+	todos, _ := u.GetTodosByUser()
+
+	for _, v := range todos {
+		fmt.Println("TODO：", v)
+	}
 }

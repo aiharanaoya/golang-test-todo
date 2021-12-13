@@ -5,3 +5,7 @@
 2021/12/09 20:15:52 main.go:17: test
 2021/12/11 16:22:11 users.go:59: near "where": syntax error
 2021/12/11 16:23:58 users.go:59: near "where": syntax error
+2021/12/13 19:32:06 todos.go:55: no such column: crested_at
+2021/12/13 19:32:30 todos.go:55: no such column: crested_at
+2021/12/13 19:44:11 todos.go:83: not enough args to execute query: want 1 got 0
+2021/12/13 19:45:10 todos.go:83: not enough args to execute query: want 1 got 0
