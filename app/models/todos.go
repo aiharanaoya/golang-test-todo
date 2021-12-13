@@ -73,7 +73,7 @@ func GetTodos() (todos []Todo, err error) {
 	return todos, err
 }
 
-// ユーザーに紐づくTODOzを全件取得
+// ユーザーに紐づくTODOを全件取得
 func (u *User) GetTodosByUser() (todos []Todo, err error) {
 	cmd := `select id, content, user_id, created_at from
 		todos where user_id = ?`
@@ -100,4 +100,27 @@ func (u *User) GetTodosByUser() (todos []Todo, err error) {
 	rows.Close()
 
 	return todos, err
+}
+
+// TODO更新
+func (t *Todo) UpdateTodo() (err error) {
+	cmd := `update todos set content = ?, user_id = ? where id = ?`
+	_, err = Db.Exec(cmd, t.Content, t.UserId, t.ID)
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
+}
+
+// TODO削除
+func (t *Todo) DeleteTodo() (err error) {
+	cmd := `delete from todos where id = ?`
+	_, err = Db.Exec(cmd, t.ID)
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	return err
 }
