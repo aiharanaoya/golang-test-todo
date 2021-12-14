@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/aiharanaoya/golang-test-todo/app/controllers"
 	"github.com/aiharanaoya/golang-test-todo/app/models"
 )
 
@@ -41,13 +42,22 @@ func main() {
 	// user, _ := models.GetUser(2)
 	// user.CreateTodo("user2 Todo2")
 
-	// t, _ := models.GetTodo(1)
+	// t, _ := models.GetTodo(5)
 	// fmt.Println("ID:1のTODO", t)
 
-	u, _ := models.GetUser(2)
-	todos, _ := u.GetTodosByUser()
+	// u, _ := models.GetUser(2)
+	// todos, _ := u.GetTodosByUser()
 
-	for _, v := range todos {
-		fmt.Println("TODO：", v)
-	}
+	// for _, v := range todos {
+	// 	fmt.Println("TODO：", v)
+	// }
+
+	// t.Content = "更新後のTODO1"
+	// t.UpdateTodo()
+
+	// fmt.Println("ID:1のTODO", t)
+
+	// t.DeleteTodo()
+
+	controllers.StartMainServer()
 }

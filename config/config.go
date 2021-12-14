@@ -12,10 +12,12 @@ type ConfigList struct {
 	SQLDriver string
 	DbName    string
 	LogFile   string
+	Static    string
 }
 
 var Config ConfigList
 
+// init関数：main関数より前に呼ばれる
 func init() {
 	LoadConfig()
 	utils.LoggingSettings(Config.LogFile)
@@ -33,5 +35,6 @@ func LoadConfig() {
 		SQLDriver: cfg.Section("db").Key("driver").String(),
 		DbName:    cfg.Section("db").Key("name").String(),
 		LogFile:   cfg.Section("web").Key("logfile").String(),
+		Static:    cfg.Section("web").Key("static").String(),
 	}
 }
