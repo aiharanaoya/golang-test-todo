@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 
-	"github.com/aiharanaoya/golang-test-todo/app/controllers"
 	"github.com/aiharanaoya/golang-test-todo/app/models"
 )
 
@@ -59,5 +58,7 @@ func main() {
 
 	// t.DeleteTodo()
 
-	controllers.StartMainServer()
+	user, _ := models.GetUserByEmail("test@test.com")
+	fmt.Println(user)
+	// controllers.StartMainServer()
 }
