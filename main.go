@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/aiharanaoya/golang-test-todo/app/controllers"
 	"github.com/aiharanaoya/golang-test-todo/app/models"
 )
 
@@ -58,7 +59,19 @@ func main() {
 
 	// t.DeleteTodo()
 
-	user, _ := models.GetUserByEmail("test@test.com")
-	fmt.Println(user)
-	// controllers.StartMainServer()
+	// user, _ := models.GetUserByEmail("test@test.com")
+	// fmt.Println("ユーザー", user)
+
+	// session, err := user.CreateSession()
+
+	// if err != nil {
+	// 	log.Println(err)
+	// }
+
+	// fmt.Println("セッション", session)
+
+	// valid, _ := session.CheckSession()
+	// fmt.Println(valid)
+
+	controllers.StartMainServer()
 }

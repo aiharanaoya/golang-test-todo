@@ -9,3 +9,381 @@
 2021/12/13 19:32:30 todos.go:55: no such column: crested_at
 2021/12/13 19:44:11 todos.go:83: not enough args to execute query: want 1 got 0
 2021/12/13 19:45:10 todos.go:83: not enough args to execute query: want 1 got 0
+2021/12/20 19:48:52 users.go:118: not enough args to execute query: want 4 got 3
+2021/12/20 19:48:52 main.go:67: sql: no rows in result set
+2021/12/20 19:49:17 users.go:118: not enough args to execute query: want 4 got 3
+2021/12/20 19:49:17 main.go:67: sql: no rows in result set
+2021/12/26 19:11:58 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:11:58 server.go:3119: http: panic serving [::1]:62775: sql: no rows in result set
+
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000110f00)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0002aa130)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0003e58c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc0002ae0e0, 0xc00014f600)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc0002ae0e0, 0xc00014f600)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc0002ae0e0, 0xc00014f600)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015a000, 0x457f970, 0xc0002ae0e0, 0xc00014f600)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000110f00, 0x4580100, 0xc00002a500)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:11:58 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:11:58 server.go:3119: http: panic serving [::1]:62776: sql: no rows in result set
+
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000192000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc00041a130)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0002c18c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00041e1c0, 0xc0000ca800)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00041e1c0, 0xc0000ca800)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00041e1c0, 0xc0000ca800)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015a000, 0x457f970, 0xc00041e1c0, 0xc0000ca800)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000192000, 0x4580100, 0xc000188100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:11:58 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:11:58 server.go:3119: http: panic serving [::1]:62777: sql: no rows in result set
+
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0001920a0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0003bf470)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001678c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00015a9a0, 0xc0000ca700)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00015a9a0, 0xc0000ca700)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00015a9a0, 0xc0000ca700)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015a000, 0x457f970, 0xc00015a9a0, 0xc0000ca700)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001920a0, 0x4580100, 0xc000188040)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:11:58 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:11:58 server.go:3119: http: panic serving [::1]:62774: sql: no rows in result set
+
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000110e60)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0003bf540)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00016b8c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00015aa80, 0xc000404200)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00015aa80, 0xc000404200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00015aa80, 0xc000404200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015a000, 0x457f970, 0xc00015aa80, 0xc000404200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000110e60, 0x4580100, 0xc000096000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:11:58 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:11:58 server.go:3119: http: panic serving [::1]:62982: sql: no rows in result set
+
+goroutine 92 [running]:
+net/http.(*conn).serve.func1(0xc0001110e0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc00041a200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0002c18c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00041e2a0, 0xc00014f700)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00041e2a0, 0xc00014f700)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00041e2a0, 0xc00014f700)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00015a000, 0x457f970, 0xc00041e2a0, 0xc00014f700)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001110e0, 0x4580100, 0xc00002bfc0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:05 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:05 server.go:3119: http: panic serving [::1]:63014: sql: no rows in result set
+
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc000124e60)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc00019c0c0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00012d8c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc0001ba000, 0xc000172100)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc0001ba000, 0xc000172100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc0001ba000, 0xc000172100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc0001ba000, 0xc000172100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000124e60, 0x4580100, 0xc000146480)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:05 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:05 server.go:3119: http: panic serving [::1]:63015: sql: no rows in result set
+
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000194000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0001010e0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001278c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00017e0e0, 0xc0001a0000)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00017e0e0, 0xc0001a0000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00017e0e0, 0xc0001a0000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc00017e0e0, 0xc0001a0000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000194000, 0x4580100, 0xc00019a000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:05 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:05 server.go:3119: http: panic serving [::1]:63016: sql: no rows in result set
+
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc000124f00)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0000b80b0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0000c58c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc0000bc000, 0xc000172200)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc0000bc000, 0xc000172200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc0000bc000, 0xc000172200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc0000bc000, 0xc000172200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000124f00, 0x4580100, 0xc000146600)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:07 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:07 server.go:3119: http: panic serving [::1]:63021: sql: no rows in result set
+
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0001940a0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc00019c1a0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00012d8c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc0001ba0e0, 0xc0000ee000)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc0001ba0e0, 0xc0000ee000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc0001ba0e0, 0xc0000ee000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc0001ba0e0, 0xc0000ee000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001940a0, 0x4580100, 0xc0000b60c0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:07 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:07 server.go:3119: http: panic serving [::1]:63022: sql: no rows in result set
+
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc000194140)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0001011c0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001278c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00017e1c0, 0xc0001a0100)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00017e1c0, 0xc0001a0100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00017e1c0, 0xc0001a0100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc00017e1c0, 0xc0001a0100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000194140, 0x4580100, 0xc00019a1c0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:07 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:07 server.go:3119: http: panic serving [::1]:63023: sql: no rows in result set
+
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc0000f0000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc000101290)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001278c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00017e2a0, 0xc0000ee100)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00017e2a0, 0xc0000ee100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00017e2a0, 0xc0000ee100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc00017e2a0, 0xc0000ee100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000f0000, 0x4580100, 0xc0000b6140)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:08 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:08 server.go:3119: http: panic serving [::1]:63029: sql: no rows in result set
+
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0001941e0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc00019c290)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc00012d8c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc0001ba1c0, 0xc0001a0200)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc0001ba1c0, 0xc0001a0200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc0001ba1c0, 0xc0001a0200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc0001ba1c0, 0xc0001a0200)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001941e0, 0x4580100, 0xc00019a300)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:08 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:08 server.go:3119: http: panic serving [::1]:63030: sql: no rows in result set
+
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc000194280)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0000b81a0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001278c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc0000bc0e0, 0xc0001a0300)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc0000bc0e0, 0xc0001a0300)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc0000bc0e0, 0xc0001a0300)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc0000bc0e0, 0xc0001a0300)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000194280, 0x4580100, 0xc00019a380)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:08 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:08 server.go:3119: http: panic serving [::1]:63031: sql: no rows in result set
+
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc000124fa0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc000101370)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001298c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00017e380, 0xc000172300)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00017e380, 0xc000172300)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00017e380, 0xc000172300)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00017e000, 0x457f970, 0xc00017e380, 0xc000172300)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000124fa0, 0x4580100, 0xc000146800)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:17 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:17 server.go:3119: http: panic serving [::1]:63074: sql: no rows in result set
+
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc000130e60)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0000120e0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001338c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc000210000, 0xc00007e000)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc000210000, 0xc00007e000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc000210000, 0xc00007e000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018e000, 0x457f970, 0xc000210000, 0xc00007e000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000130e60, 0x4580100, 0xc00002a040)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:17 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:17 server.go:3119: http: panic serving [::1]:63075: sql: no rows in result set
+
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc000130f00)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0001110e0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0001398c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc00018e0e0, 0xc00007e100)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc00018e0e0, 0xc00007e100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc00018e0e0, 0xc00007e100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018e000, 0x457f970, 0xc00018e0e0, 0xc00007e100)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000130f00, 0x4580100, 0xc000150480)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
+2021/12/26 19:12:17 route_auth.go:58: sql: no rows in result set
+2021/12/26 19:12:17 server.go:3119: http: panic serving [::1]:63076: sql: no rows in result set
+
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc00009e000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1804 +0x153
+panic(0x4496900, 0xc0000aa0c0)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/runtime/panic.go:971 +0x499
+log.Panicln(0xc0000d18c0, 0x1, 0x1)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/log/log.go:368 +0xae
+github.com/aiharanaoya/golang-test-todo/app/controllers.authenticate(0x457f970, 0xc0000c8000, 0xc0000ae000)
+	/Users/aiharanaoya/projects/private/golang-test-todo/app/controllers/route_auth.go:58 +0x1b0
+net/http.HandlerFunc.ServeHTTP(0x4525020, 0x457f970, 0xc0000c8000, 0xc0000ae000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47828c0, 0x457f970, 0xc0000c8000, 0xc0000ae000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018e000, 0x457f970, 0xc0000c8000, 0xc0000ae000)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc00009e000, 0x4580100, 0xc000090040)
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/aiharanaoya/.goenv/versions/1.16.6/src/net/http/server.go:2993 +0x39b
