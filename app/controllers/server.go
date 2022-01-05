@@ -3,6 +3,7 @@ package controllers
 import (
 	"fmt"
 	"net/http"
+	"os"
 	"regexp"
 	"strconv"
 	"text/template"
@@ -65,5 +66,6 @@ func StartMainServer() error {
 	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
 	http.HandleFunc("/todos/delete/", parseURL(todoDelete))
 
-	return http.ListenAndServe(":"+config.Config.Port, nil)
+	port := os.Getenv("PORT")
+	return http.ListenAndServe(":"+port, nil)
 }
