@@ -17,7 +17,7 @@ func (u *User) CreateTodo(content string) (err error) {
 	cmd := `insert into todos (
 		content,
 		user_id,
-		created_at) values (?, ?, ?)`
+		created_at) values ($1, $2, $3)`
 
 	_, err = Db.Exec(cmd, content, u.ID, time.Now())
 
@@ -31,7 +31,7 @@ func (u *User) CreateTodo(content string) (err error) {
 // TODO取得
 func GetTodo(id int) (todo Todo, err error) {
 	cmd := `select id, content, user_id, created_at
-		from todos where id = ?`
+		from todos where id = $1`
 
 	todo = Todo{}
 
@@ -76,7 +76,7 @@ func GetTodos() (todos []Todo, err error) {
 // ユーザーに紐づくTODOを全件取得
 func (u *User) GetTodosByUser() (todos []Todo, err error) {
 	cmd := `select id, content, user_id, created_at from
-		todos where user_id = ?`
+		todos where user_id = $1`
 
 	rows, err := Db.Query(cmd, u.ID)
 
@@ -104,7 +104,7 @@ func (u *User) GetTodosByUser() (todos []Todo, err error) {
 
 // TODO更新
 func (t *Todo) UpdateTodo() (err error) {
-	cmd := `update todos set content = ?, user_id = ? where id = ?`
+	cmd := `update todos set content = $1, user_id = $2 where id = $3`
 	_, err = Db.Exec(cmd, t.Content, t.UserId, t.ID)
 
 	if err != nil {
@@ -115,7 +115,7 @@ func (t *Todo) UpdateTodo() (err error) {
 
 // TODO削除
 func (t *Todo) DeleteTodo() (err error) {
-	cmd := `delete from todos where id = ?`
+	cmd := `delete from todos where id = $1`
 	_, err = Db.Exec(cmd, t.ID)
 
 	if err != nil {
